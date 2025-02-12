@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,117 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #5072A7;
             font-family: Arial, sans-serif;
+            min-height:100vh;
         }
-        .container {
-            margin-top: 100px;
-            align-items: center;
+
+        .container-gracias {
+            min-height:100vh;
+            background-color: #8EC5FC;
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+            /* align-items: center; */
+            /* align-content: center;  */
+
         }
-        .btn-primary {
-            margin-top: 20px;
-        }
-        .img{
-            margin-top: 40px;
+
+        .img {
+            padding: 100px;
             text-align: center;
         }
 
+        .container-btn {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* .btn-grad {
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
+        }
+
+        .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            width: 400px;
+
+        } */
+         
+        .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            
+        }
+
+        @media (max-width: 768px) {
+            .img>img {
+                height: 200px;
+                width: 100%;
+            }
+        }
     </style>
 </head>
-<body>
 
-    <div class="container text-center">
-        <h1 class="display-4">¡Gracias por registrarte!</h1>
-        <p class="lead">Tu registro ha sido exitoso. Nos pondremos en contacto contigo pronto.</p>
-        <a href="index.html" class="btn btn-primary">Regresar a la Página Principal</a>
+<body>
+    <div class="container-gracias">
+        <div class="img">
+            <img src="assets/img/Voluntariospng.png" width="800px" alt="">
+        </div>
+        <div class="container text-center">
+            <h1 class="display-4">¡Gracias por registrarte!</h1>
+            <p class="lead">Tu registro ha sido exitoso. Nos pondremos en contacto contigo pronto.</p>
+        </div>
+        <div class="container-btn">
+            <a href="index.html" class="btn-grad btn btn-primary ">Regresar a la Página Principal</a>
+        </div>
     </div>
 
-    <div class="img">
-        <img src="assets/img/Voluntariospng.png" width="500px" alt="">
+    <div class=" text-center ">
+        <footer id="footer">
+            <p class="mb-0">2025 © <strong>Global-Conect </strong> | Todos los derechos reservados</p>
+        </footer>
+        
     </div>
     <!-- Scripts de Bootstrap (puedes incluirlo desde un CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
